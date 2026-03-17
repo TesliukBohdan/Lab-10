@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Теми */
+.light-theme { background: #eee; color: #222; }
+.dark-theme { background: #1a1a1a; color: #f0f0f0; }
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.dark-theme header { background: #000; }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.buttons { margin-bottom: 20px; }
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.dark-theme button { background: #444; border: 1px solid #555; }
+
+button:hover { background: #444; }
+.dark-theme button:hover { background: #666; }
+
+#themeToggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f39c12;
+}
